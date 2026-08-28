@@ -140,12 +140,12 @@
 
         .bg-video {
             position: absolute;
-            top: 40px;
+            top: 0;
             right: 0;
             width: 55%;
-            height: calc(100% - 40px);
+            height: 100%;
             object-fit: cover;
-            object-position: center 10%;
+            object-position: center 20%;
             z-index: 0;
             pointer-events: none;
             -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 10%, black 30%);
@@ -186,7 +186,7 @@
         .popup-header {
             position: relative;
             z-index: 5;
-            padding: 34px 40px 10px 40px;
+            padding: 36px 40px 10px 40px;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -216,25 +216,24 @@
             z-index: 3;
         }
 
-        @keyframes slideUp {
-            from {
+        @keyframes slideUpTitle {
+            0% {
                 opacity: 0;
-                transform: translateY(28px);
+                transform: translateY(26px);
             }
-            to {
+            100% {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
 
         .headline {
-            font-size: clamp(28px, 3.4vw, 38px);
+            font-size: clamp(28px, 3.5vw, 40px);
             font-weight: 800;
-            line-height: 1.14;
-            color: #1D1D1F;
-            letter-spacing: -0.025em;
-            animation: slideUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            animation-delay: 0.1s;
+            line-height: 1.1;
+            color: #15181E;
+            letter-spacing: -0.035em;
+            animation: slideUpTitle 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.08s forwards;
             opacity: 0;
         }
 
@@ -246,15 +245,14 @@
         .subheadline {
             font-size: 15px;
             line-height: 1.5;
-            color: #6E6E73;
-            animation: slideUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            animation-delay: 0.22s;
+            color: #7E828B;
+            animation: slideUpTitle 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
             opacity: 0;
         }
 
         .subheadline strong {
             font-weight: 700;
-            color: #1D1D1F;
+            color: #15181E;
         }
 
         .cta-container {
@@ -263,8 +261,7 @@
             align-items: flex-start;
             gap: 12px;
             margin-top: 4px;
-            animation: slideUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            animation-delay: 0.34s;
+            animation: slideUpTitle 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.32s forwards;
             opacity: 0;
         }
 
@@ -486,8 +483,8 @@
                 <div class="popup-content-left">
                     <h2 class="headline" id="popup-title">
                         Emagreça até<br>
-                        <span class="highlight">24% de gordura<br>
-                        corporal</span> em 3<br>
+                        <span class="highlight">24% de gordura</span><br>
+                        <span class="highlight">corporal</span> em 3<br>
                         meses
                     </h2>
 
