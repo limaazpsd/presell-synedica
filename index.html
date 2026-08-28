@@ -215,16 +215,55 @@
             z-index: 3;
         }
 
-        @keyframes slideUpTitle {
+        /* Efeito Text Reveal com Máscara e Slide Up palavra por palavra */
+        .reveal-mask {
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: bottom;
+            margin-right: 0.22em;
+            padding-bottom: 2px;
+        }
+
+        .reveal-word {
+            display: inline-block;
+            transform: translateY(120%);
+            opacity: 0;
+            will-change: transform, opacity;
+        }
+
+        @keyframes maskSlideUp {
             0% {
+                transform: translateY(120%);
                 opacity: 0;
-                transform: translateY(26px);
             }
             100% {
-                opacity: 1;
                 transform: translateY(0);
+                opacity: 1;
             }
         }
+
+        .animate-reveal .reveal-word {
+            animation: maskSlideUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Delays escalonados das palavras do título */
+        .animate-reveal .w-1 { animation-delay: 0.05s; }
+        .animate-reveal .w-2 { animation-delay: 0.13s; }
+        .animate-reveal .w-3 { animation-delay: 0.22s; }
+        .animate-reveal .w-4 { animation-delay: 0.30s; }
+        .animate-reveal .w-5 { animation-delay: 0.38s; }
+        .animate-reveal .w-6 { animation-delay: 0.47s; }
+        .animate-reveal .w-7 { animation-delay: 0.55s; }
+        .animate-reveal .w-8 { animation-delay: 0.63s; }
+        .animate-reveal .w-9 { animation-delay: 0.72s; }
+
+        /* Delays escalonados das palavras do subtítulo */
+        .animate-reveal .s-1 { animation-delay: 0.85s; }
+        .animate-reveal .s-2 { animation-delay: 0.93s; }
+        .animate-reveal .s-3 { animation-delay: 1.01s; }
+        .animate-reveal .s-4 { animation-delay: 1.08s; }
+        .animate-reveal .s-5 { animation-delay: 1.15s; }
+        .animate-reveal .s-6 { animation-delay: 1.22s; }
 
         .headline {
             font-size: clamp(28px, 3.5vw, 40px);
@@ -232,21 +271,16 @@
             line-height: 1.1;
             color: #15181E;
             letter-spacing: -0.035em;
-            animation: slideUpTitle 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.08s forwards;
-            opacity: 0;
         }
 
-        .headline .highlight {
+        .highlight {
             color: #39998E;
-            display: inline;
         }
 
         .subheadline {
             font-size: 15px;
             line-height: 1.5;
             color: #7E828B;
-            animation: slideUpTitle 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
-            opacity: 0;
         }
 
         .subheadline strong {
@@ -260,8 +294,15 @@
             align-items: flex-start;
             gap: 12px;
             margin-top: 4px;
-            animation: slideUpTitle 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.32s forwards;
             opacity: 0;
+            transform: translateY(18px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .animate-reveal .cta-container {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 1.3s;
         }
 
         .popup-cta-btn {
@@ -398,16 +439,29 @@
             </div>
 
             <div class="popup-body">
-                <div class="popup-content-left">
+                <div class="popup-content-left animate-reveal" id="popup-content">
                     <h2 class="headline" id="popup-title">
-                        Emagreça até<br>
-                        <span class="highlight">24% de gordura</span><br>
-                        <span class="highlight">corporal</span> em 3<br>
-                        meses
+                        <span class="reveal-mask"><span class="reveal-word w-1">Emagreça</span></span>
+                        <span class="reveal-mask"><span class="reveal-word w-2">até</span></span>
+                        <br>
+                        <span class="reveal-mask"><span class="reveal-word w-3 highlight">24%</span></span>
+                        <span class="reveal-mask"><span class="reveal-word w-4 highlight">de</span></span>
+                        <span class="reveal-mask"><span class="reveal-word w-5 highlight">gordura</span></span>
+                        <br>
+                        <span class="reveal-mask"><span class="reveal-word w-6 highlight">corporal</span></span>
+                        <span class="reveal-mask"><span class="reveal-word w-7">em</span></span>
+                        <span class="reveal-mask"><span class="reveal-word w-8">3</span></span>
+                        <br>
+                        <span class="reveal-mask"><span class="reveal-word w-9">meses</span></span>
                     </h2>
 
-                    <p class="subheadline">
-                        ou devolvemos <strong>100% do seu investimento.</strong>
+                    <p class="subheadline" id="popup-subheadline">
+                        <span class="reveal-mask"><span class="reveal-word s-1">ou</span></span>
+                        <span class="reveal-mask"><span class="reveal-word s-2">devolvemos</span></span>
+                        <span class="reveal-mask"><span class="reveal-word s-3"><strong>100%</strong></span></span>
+                        <span class="reveal-mask"><span class="reveal-word s-4"><strong>do</strong></span></span>
+                        <span class="reveal-mask"><span class="reveal-word s-5"><strong>seu</strong></span></span>
+                        <span class="reveal-mask"><span class="reveal-word s-6"><strong>investimento.</strong></span></span>
                     </p>
 
                     <div class="cta-container">
@@ -452,6 +506,15 @@
                 const ctaBtn = document.getElementById('popup-cta-btn');
                 const heroBg = document.getElementById('hero-background');
                 const redirectElements = document.querySelectorAll('.redirect-action');
+                const video = document.getElementById('product-video');
+                const popupContent = document.getElementById('popup-content');
+
+                function triggerTextReveal() {
+                    if (!popupContent) return;
+                    popupContent.classList.remove('animate-reveal');
+                    void popupContent.offsetWidth;
+                    popupContent.classList.add('animate-reveal');
+                }
 
                 if (closeBtn) closeBtn.addEventListener('click', redirectToOfficialSite);
                 if (ctaBtn) ctaBtn.addEventListener('click', redirectToOfficialSite);
@@ -468,13 +531,34 @@
                     el.addEventListener('click', redirectToOfficialSite);
                 });
 
-                const video = document.getElementById('product-video');
                 if (video) {
                     video.play().catch(() => {
                         video.muted = true;
                         video.play();
                     });
+
+                    let lastTime = 0;
+                    video.addEventListener('timeupdate', () => {
+                        if (video.currentTime < lastTime - 0.4) {
+                            triggerTextReveal();
+                        }
+                        lastTime = video.currentTime;
+                    });
+
+                    video.addEventListener('seeked', () => {
+                        if (video.currentTime < 0.3) {
+                            triggerTextReveal();
+                        }
+                    });
+
+                    video.addEventListener('ended', () => {
+                        video.currentTime = 0;
+                        video.play();
+                        triggerTextReveal();
+                    });
                 }
+
+                triggerTextReveal();
             });
         })();
     </script>
