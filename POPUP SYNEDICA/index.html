@@ -140,11 +140,12 @@
 
         .bg-video {
             position: absolute;
-            top: 0;
+            top: 40px;
             right: 0;
             width: 55%;
-            height: 100%;
+            height: calc(100% - 40px);
             object-fit: cover;
+            object-position: center 10%;
             z-index: 0;
             pointer-events: none;
             -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 10%, black 30%);
@@ -206,65 +207,49 @@
         }
 
         .popup-content-left {
-            width: 50%;
-            max-width: 50%;
+            width: 52%;
+            max-width: 52%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 14px;
+            gap: 16px;
             z-index: 3;
         }
 
-        .popup-badge {
-            align-self: flex-start;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 5px 12px;
-            background: rgba(57, 153, 142, 0.12);
-            border: 1px solid rgba(57, 153, 142, 0.3);
-            color: #236961;
-            border-radius: 30px;
-            font-size: 11.5px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .popup-badge .badge-dot {
-            width: 7px;
-            height: 7px;
-            background-color: #39998E;
-            border-radius: 50%;
-            box-shadow: 0 0 0 3px rgba(57, 153, 142, 0.25);
-            animation: blinkDot 1.5s infinite;
-        }
-
-        @keyframes blinkDot {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.4; }
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(28px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .headline {
-            font-size: clamp(24px, 3vw, 34px);
+            font-size: clamp(28px, 3.4vw, 38px);
             font-weight: 800;
-            line-height: 1.18;
+            line-height: 1.14;
             color: #1D1D1F;
             letter-spacing: -0.025em;
+            animation: slideUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.1s;
+            opacity: 0;
         }
 
         .headline .highlight {
             color: #39998E;
-            background: linear-gradient(120deg, #2A8C81 0%, #39998E 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: inline-block;
+            display: inline;
         }
 
         .subheadline {
-            font-size: 14px;
-            line-height: 1.55;
+            font-size: 15px;
+            line-height: 1.5;
             color: #6E6E73;
+            animation: slideUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.22s;
+            opacity: 0;
         }
 
         .subheadline strong {
@@ -276,8 +261,11 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 10px;
+            gap: 12px;
             margin-top: 4px;
+            animation: slideUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.34s;
+            opacity: 0;
         }
 
         .popup-cta-btn {
@@ -355,6 +343,7 @@
 
             .bg-video {
                 position: relative;
+                top: 0;
                 width: 100%;
                 height: 180px;
                 border-radius: 14px;
@@ -377,11 +366,11 @@
             }
 
             .headline {
-                font-size: 22px;
+                font-size: 24px;
             }
 
             .subheadline {
-                font-size: 13.5px;
+                font-size: 14px;
             }
 
             .popup-cta-btn {
@@ -495,19 +484,15 @@
 
             <div class="popup-body">
                 <div class="popup-content-left">
-                    <div class="popup-badge">
-                        <span class="badge-dot"></span>
-                        <span>Condição Exclusiva</span>
-                    </div>
-
                     <h2 class="headline" id="popup-title">
-                        Inovação e <br>
-                        <span class="highlight">Alta Pureza</span> <br>
-                        em Biotecnologia
+                        Emagreça até<br>
+                        <span class="highlight">24% de gordura<br>
+                        corporal</span> em 3<br>
+                        meses
                     </h2>
 
                     <p class="subheadline">
-                        Comprovada por rigoroso controle de qualidade ou <strong>100% do seu investimento de volta.</strong>
+                        ou devolvemos <strong>100% do seu investimento.</strong>
                     </p>
 
                     <div class="cta-container">
