@@ -9,7 +9,6 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://synedicaoficial.ltd/">
     
-    <!-- Open Graph / Social Media -->
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Synedica - Biotecnologia e Alta Pureza">
@@ -18,19 +17,14 @@
     <meta property="og:site_name" content="Synedica Oficial">
     <meta property="og:image" content="https://synedicaoficial.ltd/LOGO%20SYNEDICA.svg">
     
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Synedica - Inovação Biotecnológica">
     <meta name="twitter:description" content="Tecnologia de precisão e controle de qualidade laboratorial.">
     <meta name="twitter:image" content="https://synedicaoficial.ltd/LOGO%20SYNEDICA.svg">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="LOGO SYNEDICA.svg">
-    
-    <!-- Estilos -->
     <link rel="stylesheet" href="shared.css">
 
-    <!-- JSON-LD: Schema.org para Google & LLMs (GEO) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -106,9 +100,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(10, 12, 16, 0.75);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
+            background: rgba(0, 0, 0, 0.38);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -121,10 +115,10 @@
         .popup-container {
             background: linear-gradient(145deg, #F9FAFB 0%, #EAECEF 100%);
             width: 100%;
-            max-width: 920px;
+            max-width: 900px;
             max-height: 94vh;
-            border-radius: 28px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3), 0 0 1px 1px rgba(255, 255, 255, 0.8) inset;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 1px 1px rgba(255, 255, 255, 0.8) inset;
             position: relative;
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.9);
@@ -144,12 +138,25 @@
             to { opacity: 1; transform: scale(1) translateY(0); }
         }
 
+        .bg-video {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 55%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            pointer-events: none;
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 10%, black 30%);
+            mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 10%, black 30%);
+        }
+
         .close-btn {
             position: absolute;
             top: 20px;
             right: 20px;
-            width: 38px;
-            height: 38px;
+            width: 36px;
+            height: 36px;
             background: rgba(255, 255, 255, 0.9);
             border: 1px solid rgba(0, 0, 0, 0.08);
             border-radius: 50%;
@@ -168,8 +175,8 @@
         }
 
         .close-btn svg {
-            width: 16px;
-            height: 16px;
+            width: 15px;
+            height: 15px;
             stroke: #1D1D1F;
             stroke-width: 2.4;
             stroke-linecap: round;
@@ -178,7 +185,7 @@
         .popup-header {
             position: relative;
             z-index: 5;
-            padding: 32px 40px 10px 40px;
+            padding: 34px 40px 10px 40px;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -193,18 +200,18 @@
             position: relative;
             z-index: 2;
             display: flex;
-            padding: 10px 40px 38px 40px;
+            padding: 10px 40px 42px 40px;
             gap: 36px;
             align-items: center;
         }
 
         .popup-content-left {
-            width: 54%;
-            max-width: 54%;
+            width: 50%;
+            max-width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 18px;
+            gap: 14px;
             z-index: 3;
         }
 
@@ -213,20 +220,20 @@
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            padding: 6px 14px;
+            padding: 5px 12px;
             background: rgba(57, 153, 142, 0.12);
             border: 1px solid rgba(57, 153, 142, 0.3);
             color: #236961;
             border-radius: 30px;
-            font-size: 12px;
+            font-size: 11.5px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
 
         .popup-badge .badge-dot {
-            width: 8px;
-            height: 8px;
+            width: 7px;
+            height: 7px;
             background-color: #39998E;
             border-radius: 50%;
             box-shadow: 0 0 0 3px rgba(57, 153, 142, 0.25);
@@ -239,7 +246,7 @@
         }
 
         .headline {
-            font-size: clamp(26px, 3.2vw, 36px);
+            font-size: clamp(24px, 3vw, 34px);
             font-weight: 800;
             line-height: 1.18;
             color: #1D1D1F;
@@ -255,7 +262,7 @@
         }
 
         .subheadline {
-            font-size: 15px;
+            font-size: 14px;
             line-height: 1.55;
             color: #6E6E73;
         }
@@ -265,67 +272,54 @@
             color: #1D1D1F;
         }
 
+        .cta-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            margin-top: 4px;
+        }
+
         .popup-cta-btn {
             background: linear-gradient(135deg, #39998E 0%, #236961 100%);
             color: #FFFFFF;
             font-family: 'Montserrat', sans-serif;
-            font-size: 15.5px;
+            font-size: 13.5px;
             font-weight: 700;
-            padding: 16px 26px;
+            padding: 11px 22px;
             border: none;
-            border-radius: 14px;
+            border-radius: 9px;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
-            box-shadow: 0 10px 24px rgba(57, 153, 142, 0.4);
+            align-self: flex-start;
+            gap: 8px;
+            box-shadow: 0 4px 14px rgba(57, 153, 142, 0.35);
             transition: all 0.2s ease;
             position: relative;
             overflow: hidden;
-            width: 100%;
+            width: auto;
         }
 
         .popup-cta-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 14px 30px rgba(57, 153, 142, 0.55);
+            box-shadow: 0 8px 20px rgba(57, 153, 142, 0.5);
         }
 
         .popup-cta-btn svg {
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
             fill: none;
             stroke: currentColor;
             stroke-width: 2.5;
             stroke-linecap: round;
         }
 
-        .bg-video-wrapper {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 52%;
-            height: 100%;
-            z-index: 1;
-            pointer-events: none;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 15%, black 45%);
-            mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 15%, black 45%);
-        }
-
-        .bg-video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
         .trust-info {
             display: flex;
             align-items: center;
-            gap: 16px;
+            gap: 14px;
             font-size: 11px;
             font-weight: 600;
             color: #86868B;
@@ -338,8 +332,8 @@
         }
 
         .trust-item svg {
-            width: 14px;
-            height: 14px;
+            width: 13px;
+            height: 13px;
             stroke: #39998E;
             stroke-width: 2;
             fill: none;
@@ -359,14 +353,7 @@
                 height: 34px;
             }
 
-            .popup-body {
-                flex-direction: column;
-                padding: 10px 20px 24px 20px;
-                gap: 18px;
-                overflow-y: auto;
-            }
-
-            .bg-video-wrapper {
+            .bg-video {
                 position: relative;
                 width: 100%;
                 height: 180px;
@@ -374,7 +361,13 @@
                 -webkit-mask-image: none;
                 mask-image: none;
                 order: 1;
-                background: #000;
+            }
+
+            .popup-body {
+                flex-direction: column;
+                padding: 10px 20px 24px 20px;
+                gap: 16px;
+                overflow-y: auto;
             }
 
             .popup-content-left {
@@ -384,10 +377,16 @@
             }
 
             .headline {
-                font-size: 23px;
+                font-size: 22px;
             }
 
             .subheadline {
+                font-size: 13.5px;
+            }
+
+            .popup-cta-btn {
+                width: 100%;
+                padding: 13px 20px;
                 font-size: 14px;
             }
         }
@@ -395,7 +394,6 @@
 </head>
 <body>
 
-    <!-- Faixa Superior Institucional -->
     <div class="top-announcement-bar">
         <span>Desenvolvimento com alta tecnologia e eficácia comprovada</span>
         <span class="separator">/</span>
@@ -404,14 +402,13 @@
         <span>Entrega rápida com envio em até 24h</span>
     </div>
 
-    <!-- Cabeçalho Principal -->
     <header class="site-header">
         <div class="header-container">
             <a href="index.html" class="brand-logo">
-                <img src="LOGO SYNEDICA.svg" alt="Synedica Logo Oficial">
+                <img src="LOGO SYNEDICA.svg" alt="Synedica Logo">
             </a>
 
-            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Abrir Menu">☰</button>
+            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Menu">☰</button>
 
             <nav>
                 <ul class="nav-menu" id="nav-menu">
@@ -432,25 +429,22 @@
         </div>
     </header>
 
-    <!-- Palco Principal com Imagem de Fundo (Responsiva e Clicável -> https://synedicaoficial.com/) -->
     <main class="pressell-hero-stage">
-        <div class="pressell-bg-image redirect-action" id="hero-background" title="Clique para acessar o site oficial Synedica"></div>
+        <div class="pressell-bg-image redirect-action" id="hero-background"></div>
     </main>
 
-    <!-- Botão Flutuante de Contato / Site Oficial -> https://synedicaoficial.com/ -->
-    <a href="https://synedicaoficial.com/" class="floating-cta redirect-action" id="floating-btn" aria-label="Acessar Canal Oficial Synedica">
+    <a href="https://synedicaoficial.com/" class="floating-cta redirect-action" id="floating-btn" aria-label="WhatsApp">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.983.537 1.83.82 2.796.82 3.183 0 5.769-2.586 5.769-5.766.001-3.182-2.585-5.77-5.769-5.77zm0 10.42c-.886 0-1.745-.246-2.483-.711l-.178-.112-1.847.485.494-1.802-.116-.186c-.513-.815-.784-1.636-.783-2.51 0-2.614 2.127-4.741 4.743-4.741 2.614 0 4.742 2.127 4.742 4.741-.001 2.615-2.129 4.742-4.745 4.742z"/>
         </svg>
         <span>Comprar pelo WhatsApp</span>
     </a>
 
-    <!-- Rodapé Global de Conformidade Google Ads & Navegação -->
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <img src="LOGO SYNEDICA.svg" alt="Synedica Oficial">
+                    <img src="LOGO SYNEDICA.svg" alt="Synedica Logo">
                     <p>Referência em síntese biotecnológica de alta pureza, inovação científica e compromisso absoluto com a qualidade.</p>
                 </div>
 
@@ -483,31 +477,23 @@
         </div>
     </footer>
 
-    <!-- POPUP INICIAL DA SESSÃO (Redirecionamento Automático para https://synedicaoficial.com/) -->
     <div class="popup-overlay" id="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
         <div class="popup-container" id="popup-card">
             
-            <!-- Botão de Fechar -->
-            <button class="close-btn redirect-action" id="close-btn" aria-label="Fechar Popup e ir para o site oficial" title="Fechar">
+            <video id="product-video" class="bg-video" src="synedica-video-institucional.mp4" autoplay muted playsinline loop></video>
+
+            <button class="close-btn redirect-action" id="close-btn" aria-label="Fechar" title="Fechar">
                 <svg viewBox="0 0 24 24">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
             </button>
 
-            <!-- Cabeçalho com Logo -->
             <div class="popup-header">
                 <img src="LOGO SYNEDICA.svg" alt="Synedica Logo">
             </div>
 
-            <!-- Corpo do Popup -->
             <div class="popup-body">
-                <!-- Vídeo Integrado -->
-                <div class="bg-video-wrapper redirect-action">
-                    <video id="product-video" class="bg-video" src="synedica-video-institucional.mp4" autoplay muted playsinline loop></video>
-                </div>
-
-                <!-- Conteúdo -->
                 <div class="popup-content-left">
                     <div class="popup-badge">
                         <span class="badge-dot"></span>
@@ -548,7 +534,6 @@
         </div>
     </div>
 
-    <!-- Script de Redirecionamento e Interatividade -->
     <script>
         (function() {
             const DESTINATION_URL = "https://synedicaoficial.com/";
@@ -577,13 +562,8 @@
                     });
                 }
 
-                // 1. Fechar popup (X) -> Redireciona para o site oficial
                 if (closeBtn) closeBtn.addEventListener('click', redirectToOfficialSite);
-
-                // 2. Botão CTA do popup -> Redireciona para o site oficial
                 if (ctaBtn) ctaBtn.addEventListener('click', redirectToOfficialSite);
-
-                // 3. Clicar fora do popup (Overlay) -> Redireciona para o site oficial
                 if (overlay) {
                     overlay.addEventListener('click', (event) => {
                         if (event.target === overlay) {
@@ -591,19 +571,13 @@
                         }
                     });
                 }
-
-                // 4. Clicar no fundo da página / banner -> Redireciona para o site oficial
                 if (heroBg) heroBg.addEventListener('click', redirectToOfficialSite);
-
-                // 5. Botão flutuante -> Redireciona para o site oficial
                 if (floatingBtn) floatingBtn.addEventListener('click', redirectToOfficialSite);
 
-                // 6. Demais gatilhos de redirecionamento
                 redirectElements.forEach(el => {
                     el.addEventListener('click', redirectToOfficialSite);
                 });
 
-                // Auto-play do vídeo
                 const video = document.getElementById('product-video');
                 if (video) {
                     video.play().catch(() => {

@@ -1,4 +1,3 @@
-/* Synedica Official Pressel - Shared Stylesheet */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
 
 :root {
@@ -50,7 +49,6 @@ a {
     transition: var(--transition-smooth);
 }
 
-/* Top Announcement Bar */
 .top-announcement-bar {
     background: linear-gradient(90deg, #1C7066 0%, #39998E 50%, #1C7066 100%);
     color: #FFFFFF;
@@ -71,7 +69,6 @@ a {
     opacity: 0.6;
 }
 
-/* Main Navigation Header */
 .site-header {
     background: rgba(11, 13, 17, 0.85);
     backdrop-filter: blur(16px);
@@ -177,7 +174,6 @@ a {
     padding: 4px;
 }
 
-/* Page Hero */
 .page-hero {
     padding: 60px 24px 40px 24px;
     text-align: center;
@@ -225,7 +221,6 @@ a {
     line-height: 1.6;
 }
 
-/* Main Content Area */
 .content-section {
     max-width: var(--container-max);
     margin: 0 auto 60px auto;
@@ -282,7 +277,6 @@ a {
     line-height: 1.6;
 }
 
-/* Informational Content Block */
 .prose-block {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -327,7 +321,6 @@ a {
     margin-bottom: 8px;
 }
 
-/* FAQ Accordion */
 .faq-list {
     display: flex;
     flex-direction: column;
@@ -378,7 +371,6 @@ a {
     line-height: 1.7;
 }
 
-/* Global Footer for Compliance and SEO */
 .site-footer {
     margin-top: auto;
     background: #07080A;
@@ -467,7 +459,6 @@ a {
     gap: 14px;
 }
 
-/* Floating WhatsApp / Official Site Badge */
 .floating-cta {
     position: fixed;
     bottom: 24px;
@@ -498,7 +489,6 @@ a {
     50% { transform: scale(1.04); }
 }
 
-/* Responsive Rules */
 @media (max-width: 992px) {
     .footer-top {
         grid-template-columns: 1fr 1fr;
