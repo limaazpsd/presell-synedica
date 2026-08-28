@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Synedica - Inovação Biotecnológica e Padrão de Alta Pureza</title>
+    <meta name="description" content="Conheça a Synedica: formulações avançadas desenvolvidas com base em ciência, tecnologia de alta pureza, envio rápido em 24h e qualidade certificada.">
+    <meta name="keywords" content="synedica, biotecnologia, tecnologia avançada, inovação científica, alta performance, bem-estar">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://synedicaoficial.ltd/">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Synedica - Biotecnologia e Alta Pureza">
+    <meta property="og:description" content="Inovação fundamentada em ciência, processos analíticos modernos e entrega rápida com garantia de conformidade.">
+    <meta property="og:url" content="https://synedicaoficial.ltd/">
+    <meta property="og:site_name" content="Synedica Oficial">
+    <meta property="og:image" content="https://synedicaoficial.ltd/LOGO%20SYNEDICA.svg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Synedica - Inovação Biotecnológica">
+    <meta name="twitter:description" content="Tecnologia de precisão e controle de qualidade laboratorial.">
+    <meta name="twitter:image" content="https://synedicaoficial.ltd/LOGO%20SYNEDICA.svg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="LOGO SYNEDICA.svg">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="shared.css">
+
+    <!-- JSON-LD: Schema.org para Google & LLMs (GEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://synedicaoficial.ltd/#organization",
+          "name": "Synedica",
+          "url": "https://synedicaoficial.ltd/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://synedicaoficial.ltd/LOGO%20SYNEDICA.svg"
+          },
+          "description": "Desenvolvimento de soluções biotecnológicas avançadas e controle de qualidade.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "availableLanguage": ["Portuguese"]
+          },
+          "sameAs": [
+            "https://synedicaoficial.ltd/",
+            "https://synedicaoficial.com/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://synedicaoficial.ltd/#website",
+          "url": "https://synedicaoficial.ltd/",
+          "name": "Synedica Oficial",
+          "publisher": {
+            "@id": "https://synedicaoficial.ltd/#organization"
+          },
+          "inLanguage": "pt-BR"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        .pressell-hero-stage {
+            position: relative;
+            min-height: calc(100vh - 120px);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0B0D11;
+            overflow: hidden;
+        }
+
+        .pressell-bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('Captura de tela 2026-08-28 102649.png');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            z-index: 1;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .pressell-bg-image:hover {
+            filter: brightness(1.03);
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 12, 16, 0.75);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            z-index: 99999;
+            animation: overlayFadeIn 0.4s ease forwards;
+            cursor: pointer;
+        }
+
+        .popup-container {
+            background: linear-gradient(145deg, #F9FAFB 0%, #EAECEF 100%);
+            width: 100%;
+            max-width: 920px;
+            max-height: 94vh;
+            border-radius: 28px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3), 0 0 1px 1px rgba(255, 255, 255, 0.8) inset;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            display: flex;
+            flex-direction: column;
+            cursor: default;
+            animation: popupScaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes overlayFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes popupScaleIn {
+            from { opacity: 0; transform: scale(0.92) translateY(16px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 38px;
+            height: 38px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            z-index: 20;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .close-btn:hover {
+            background: #FFFFFF;
+            transform: rotate(90deg) scale(1.08);
+        }
+
+        .close-btn svg {
+            width: 16px;
+            height: 16px;
+            stroke: #1D1D1F;
+            stroke-width: 2.4;
+            stroke-linecap: round;
+        }
+
+        .popup-header {
+            position: relative;
+            z-index: 5;
+            padding: 32px 40px 10px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .popup-header img {
+            height: 44px;
+            width: auto;
+        }
+
+        .popup-body {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            padding: 10px 40px 38px 40px;
+            gap: 36px;
+            align-items: center;
+        }
+
+        .popup-content-left {
+            width: 54%;
+            max-width: 54%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 18px;
+            z-index: 3;
+        }
+
+        .popup-badge {
+            align-self: flex-start;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            background: rgba(57, 153, 142, 0.12);
+            border: 1px solid rgba(57, 153, 142, 0.3);
+            color: #236961;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .popup-badge .badge-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #39998E;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(57, 153, 142, 0.25);
+            animation: blinkDot 1.5s infinite;
+        }
+
+        @keyframes blinkDot {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .headline {
+            font-size: clamp(26px, 3.2vw, 36px);
+            font-weight: 800;
+            line-height: 1.18;
+            color: #1D1D1F;
+            letter-spacing: -0.025em;
+        }
+
+        .headline .highlight {
+            color: #39998E;
+            background: linear-gradient(120deg, #2A8C81 0%, #39998E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .subheadline {
+            font-size: 15px;
+            line-height: 1.55;
+            color: #6E6E73;
+        }
+
+        .subheadline strong {
+            font-weight: 700;
+            color: #1D1D1F;
+        }
+
+        .popup-cta-btn {
+            background: linear-gradient(135deg, #39998E 0%, #236961 100%);
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15.5px;
+            font-weight: 700;
+            padding: 16px 26px;
+            border: none;
+            border-radius: 14px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            box-shadow: 0 10px 24px rgba(57, 153, 142, 0.4);
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .popup-cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px rgba(57, 153, 142, 0.55);
+        }
+
+        .popup-cta-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+        }
+
+        .bg-video-wrapper {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 52%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 15%, black 45%);
+            mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 15%, black 45%);
+        }
+
+        .bg-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .trust-info {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #86868B;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .trust-item svg {
+            width: 14px;
+            height: 14px;
+            stroke: #39998E;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        @media (max-width: 768px) {
+            .popup-container {
+                max-height: 92vh;
+                border-radius: 22px;
+            }
+
+            .popup-header {
+                padding: 20px 20px 6px 20px;
+            }
+
+            .popup-header img {
+                height: 34px;
+            }
+
+            .popup-body {
+                flex-direction: column;
+                padding: 10px 20px 24px 20px;
+                gap: 18px;
+                overflow-y: auto;
+            }
+
+            .bg-video-wrapper {
+                position: relative;
+                width: 100%;
+                height: 180px;
+                border-radius: 14px;
+                -webkit-mask-image: none;
+                mask-image: none;
+                order: 1;
+                background: #000;
+            }
+
+            .popup-content-left {
+                width: 100%;
+                max-width: 100%;
+                order: 2;
+            }
+
+            .headline {
+                font-size: 23px;
+            }
+
+            .subheadline {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Faixa Superior Institucional -->
+    <div class="top-announcement-bar">
+        <span>Desenvolvimento com alta tecnologia e eficácia comprovada</span>
+        <span class="separator">/</span>
+        <span>Compra direta pelo canal oficial</span>
+        <span class="separator">/</span>
+        <span>Entrega rápida com envio em até 24h</span>
+    </div>
+
+    <!-- Cabeçalho Principal -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="brand-logo">
+                <img src="LOGO SYNEDICA.svg" alt="Synedica Logo Oficial">
+            </a>
+
+            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Abrir Menu">☰</button>
+
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Início</a></li>
+                    <li><a href="por-que-nos.html" class="nav-link">Por Que Nós</a></li>
+                    <li><a href="fale-conosco.html" class="nav-link">Fale Conosco</a></li>
+                    <li><a href="termos.html" class="nav-link">Termos</a></li>
+                    <li><a href="privacidade.html" class="nav-link">Privacidade</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://synedicaoficial.com/" class="header-cta-btn redirect-action">
+                    <span>Acessar Loja</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Palco Principal com Imagem de Fundo (Responsiva e Clicável -> https://synedicaoficial.com/) -->
+    <main class="pressell-hero-stage">
+        <div class="pressell-bg-image redirect-action" id="hero-background" title="Clique para acessar o site oficial Synedica"></div>
+    </main>
+
+    <!-- Botão Flutuante de Contato / Site Oficial -> https://synedicaoficial.com/ -->
+    <a href="https://synedicaoficial.com/" class="floating-cta redirect-action" id="floating-btn" aria-label="Acessar Canal Oficial Synedica">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.983.537 1.83.82 2.796.82 3.183 0 5.769-2.586 5.769-5.766.001-3.182-2.585-5.77-5.769-5.77zm0 10.42c-.886 0-1.745-.246-2.483-.711l-.178-.112-1.847.485.494-1.802-.116-.186c-.513-.815-.784-1.636-.783-2.51 0-2.614 2.127-4.741 4.743-4.741 2.614 0 4.742 2.127 4.742 4.741-.001 2.615-2.129 4.742-4.745 4.742z"/>
+        </svg>
+        <span>Comprar pelo WhatsApp</span>
+    </a>
+
+    <!-- Rodapé Global de Conformidade Google Ads & Navegação -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="LOGO SYNEDICA.svg" alt="Synedica Oficial">
+                    <p>Referência em síntese biotecnológica de alta pureza, inovação científica e compromisso absoluto com a qualidade.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul class="footer-links">
+                        <li><a href="por-que-nos.html">Por Que Nós</a></li>
+                        <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Segurança e Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="termos.html">Termos de Uso</a></li>
+                        <li><a href="privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="https://synedicaoficial.com/" class="redirect-action">Canal Oficial Synedica</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-disclaimer">
+                <p><strong>Isenção de Responsabilidade:</strong> As informações contidas neste site destinam-se a fins estritamente informativos e de suporte biotecnológico. Os produtos desenvolvidos seguem rigorosos padrões de controle e pureza. Consulte sempre um profissional habilitado antes de iniciar qualquer protocolo ou rotina. Todas as marcas e registros citados são de propriedade de seus respectivos detentores.</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Synedica. Hospedado em synedicaoficial.ltd. Todos os direitos reservados.</p>
+                <p>Tecnologia e Pureza Certificada</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- POPUP INICIAL DA SESSÃO (Redirecionamento Automático para https://synedicaoficial.com/) -->
+    <div class="popup-overlay" id="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+        <div class="popup-container" id="popup-card">
+            
+            <!-- Botão de Fechar -->
+            <button class="close-btn redirect-action" id="close-btn" aria-label="Fechar Popup e ir para o site oficial" title="Fechar">
+                <svg viewBox="0 0 24 24">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <!-- Cabeçalho com Logo -->
+            <div class="popup-header">
+                <img src="LOGO SYNEDICA.svg" alt="Synedica Logo">
+            </div>
+
+            <!-- Corpo do Popup -->
+            <div class="popup-body">
+                <!-- Vídeo Integrado -->
+                <div class="bg-video-wrapper redirect-action">
+                    <video id="product-video" class="bg-video" src="synedica-video-institucional.mp4" autoplay muted playsinline loop></video>
+                </div>
+
+                <!-- Conteúdo -->
+                <div class="popup-content-left">
+                    <div class="popup-badge">
+                        <span class="badge-dot"></span>
+                        <span>Condição Exclusiva</span>
+                    </div>
+
+                    <h2 class="headline" id="popup-title">
+                        Inovação e <br>
+                        <span class="highlight">Alta Pureza</span> <br>
+                        em Biotecnologia
+                    </h2>
+
+                    <p class="subheadline">
+                        Comprovada por rigoroso controle de qualidade ou <strong>100% do seu investimento de volta.</strong>
+                    </p>
+
+                    <div class="cta-container">
+                        <button class="popup-cta-btn redirect-action" id="popup-cta-btn">
+                            <span>APROVEITAR OFERTA</span>
+                            <svg viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+
+                        <div class="trust-info">
+                            <div class="trust-item">
+                                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <span>Garantia de Autenticidade</span>
+                            </div>
+                            <div class="trust-item">
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                <span>Envio Seguro em 24h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de Redirecionamento e Interatividade -->
+    <script>
+        (function() {
+            const DESTINATION_URL = "https://synedicaoficial.com/";
+
+            function redirectToOfficialSite(e) {
+                if (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+                window.location.href = DESTINATION_URL;
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const overlay = document.getElementById('popup-overlay');
+                const closeBtn = document.getElementById('close-btn');
+                const ctaBtn = document.getElementById('popup-cta-btn');
+                const heroBg = document.getElementById('hero-background');
+                const floatingBtn = document.getElementById('floating-btn');
+                const mobileToggle = document.getElementById('mobile-toggle');
+                const navMenu = document.getElementById('nav-menu');
+                const redirectElements = document.querySelectorAll('.redirect-action');
+
+                if (mobileToggle && navMenu) {
+                    mobileToggle.addEventListener('click', () => {
+                        navMenu.classList.toggle('open');
+                    });
+                }
+
+                // 1. Fechar popup (X) -> Redireciona para o site oficial
+                if (closeBtn) closeBtn.addEventListener('click', redirectToOfficialSite);
+
+                // 2. Botão CTA do popup -> Redireciona para o site oficial
+                if (ctaBtn) ctaBtn.addEventListener('click', redirectToOfficialSite);
+
+                // 3. Clicar fora do popup (Overlay) -> Redireciona para o site oficial
+                if (overlay) {
+                    overlay.addEventListener('click', (event) => {
+                        if (event.target === overlay) {
+                            redirectToOfficialSite(event);
+                        }
+                    });
+                }
+
+                // 4. Clicar no fundo da página / banner -> Redireciona para o site oficial
+                if (heroBg) heroBg.addEventListener('click', redirectToOfficialSite);
+
+                // 5. Botão flutuante -> Redireciona para o site oficial
+                if (floatingBtn) floatingBtn.addEventListener('click', redirectToOfficialSite);
+
+                // 6. Demais gatilhos de redirecionamento
+                redirectElements.forEach(el => {
+                    el.addEventListener('click', redirectToOfficialSite);
+                });
+
+                // Auto-play do vídeo
+                const video = document.getElementById('product-video');
+                if (video) {
+                    video.play().catch(() => {
+                        video.muted = true;
+                        video.play();
+                    });
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

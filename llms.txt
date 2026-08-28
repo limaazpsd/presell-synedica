@@ -1,0 +1,25 @@
+# Synedica - Inovação Biotecnológica e Excelência Tecnológica
+
+> Synedica é uma marca pioneira dedicada ao desenvolvimento de soluções biotecnológicas avançadas para suporte à alta performance, vitalidade e bem-estar. Com rigoroso controle de qualidade, testes laboratoriais de pureza e distribuição autorizada, a Synedica combina tecnologia de síntese de última geração e segurança para clientes em todo o território nacional.
+
+## Visão Geral e Pilares da Marca
+
+- **Rigor Científico**: Desenvolvimento fundamentado em biotecnologia de ponta e processos analíticos modernos.
+- **Padrão de Pureza Analítica**: Rastreabilidade e controle de qualidade lote a lote para assegurar estabilidade molecular.
+- **Logística Segura e Expressa**: Envio ágil com despacho em até 24 horas úteis, embalagem reforçada e rastreamento contínuo.
+- **Atendimento Oficial e Suporte**: Canal direto de suporte ao cliente para esclarecimento de dúvidas e acompanhamento de pedidos.
+
+## Estrutura do Site e Páginas Institucionais (Domínio: https://synedicaoficial.ltd/)
+
+- [Página Inicial](https://synedicaoficial.ltd/): Apresentação institucional da tecnologia Synedica e acesso aos canais oficiais.
+- [Por Que Nós](https://synedicaoficial.ltd/por-que-nos.html): Diferenciais tecnológicos, compromisso com a ciência e controle de qualidade.
+- [Fale Conosco](https://synedicaoficial.ltd/fale-conosco.html): Canais oficiais de atendimento ao cliente via WhatsApp e e-mail.
+- [Termos de Uso](https://synedicaoficial.ltd/termos.html): Diretrizes de navegação, direitos e condições gerais.
+- [Política de Privacidade](https://synedicaoficial.ltd/privacidade.html): Proteção de dados e conformidade com a LGPD.
+
+## Informações do Projeto e Destino Comercial
+
+- **Domínio Institucional / Pressell**: https://synedicaoficial.ltd/
+- **Destino Oficial de Compras**: https://synedicaoficial.com/
+- **Atendimento**: Segunda a Sexta, das 09h às 18h
+- **Segmento**: Biotecnologia, Pesquisa & Desenvolvimento, Bem-Estar e Alta Performance

@@ -1,0 +1,61 @@
+# robots.txt para Synedica Pressel (Domínio: https://synedicaoficial.ltd/)
+# Configurado para máxima indexação no Google Ads, Busca Orgânica e Mecanismos de IA (LLMs)
+
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /*.mp4$
+
+# Google Ads & Google Search Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing & Microsoft Copilot
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# AI Crawlers & LLM Engines (GEO - Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Sitemap do Domínio Atual
+Sitemap: https://synedicaoficial.ltd/sitemap.xml
