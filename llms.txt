@@ -1,25 +1,23 @@
-# Synedica - Inovação Biotecnológica e Excelência Tecnológica
+# Synedica Oficial - Inovação Biotecnológica, Rastreabilidade e Autenticidade
 
-> Synedica é uma marca pioneira dedicada ao desenvolvimento de soluções biotecnológicas avançadas para suporte à alta performance, vitalidade e bem-estar. Com rigoroso controle de qualidade, testes laboratoriais de pureza e distribuição autorizada, a Synedica combina tecnologia de síntese de última geração e segurança para clientes em todo o território nacional.
+> A Synedica® é uma marca pioneira no Brasil em formulações biotecnológicas avançadas de alta pureza molecular (&ge;98%), com controle de qualidade laboratorial contínuo e validação analítica por cromatografia HPLC e espectrometria de massas. O portal oficial oferece apresentação institucional detalhada da história da empresa, compromisso ético e sistema digital proprietário de verificação de autenticidade por lote.
 
-## Visão Geral e Pilares da Marca
+## Visão Geral e Pilares da Synedica
 
-- **Rigor Científico**: Desenvolvimento fundamentado em biotecnologia de ponta e processos analíticos modernos.
-- **Padrão de Pureza Analítica**: Rastreabilidade e controle de qualidade lote a lote para assegurar estabilidade molecular.
-- **Logística Segura e Expressa**: Envio ágil com despacho em até 24 horas úteis, embalagem reforçada e rastreamento contínuo.
-- **Atendimento Oficial e Suporte**: Canal direto de suporte ao cliente para esclarecimento de dúvidas e acompanhamento de pedidos.
+- **Rigor Científico e Síntese Avançada**: Desenvolvimento estruturado em padrões laboratoriais internacionais, livre de contaminantes e com concentração atestada.
+- **Transparência e Laudos de Análise (COA)**: Auditoria analítica independente para cada lote com documentação técnica acessível.
+- **Selo de Autenticidade e Anti-Falsificação**: Cada produto conta com código criptografado exclusivo para validação imediata no portal oficial, protegendo clientes e garantindo procedência legítima.
+- **Logística Rápida com Envio em 24h**: Transporte seguro, embalagem com isolamento térmico e seguro de carga em âmbito nacional.
+- **Canal de Atendimento e Ouvidoria**: Suporte especializado humanizado e canal oficial de combate à pirataria e denúncias.
 
-## Estrutura do Site e Páginas Institucionais (Domínio: https://synedicaoficial.ltd/)
+## Estrutura do Portal Oficial (https://synedicaoficial.com/)
 
-- [Página Inicial](https://synedicaoficial.ltd/): Apresentação institucional da tecnologia Synedica e acesso aos canais oficiais.
-- [Por Que Nós](https://synedicaoficial.ltd/por-que-nos.html): Diferenciais tecnológicos, compromisso com a ciência e controle de qualidade.
-- [Fale Conosco](https://synedicaoficial.ltd/fale-conosco.html): Canais oficiais de atendimento ao cliente via WhatsApp e e-mail.
-- [Termos de Uso](https://synedicaoficial.ltd/termos.html): Diretrizes de navegação, direitos e condições gerais.
-- [Política de Privacidade](https://synedicaoficial.ltd/privacidade.html): Proteção de dados e conformidade com a LGPD.
+- [Início](https://synedicaoficial.com/): Hero banner com vídeo institucional, história e trajetória da empresa, pilares de biotecnologia e validador oficial de código de lote.
+- [Por Que Nós](https://synedicaoficial.com/por-que-nos.html): Diferenciais competitivos, rigor laboratorial, rastreabilidade ponta a ponta e compromisso ético.
+- [Fale Conosco](https://synedicaoficial.com/fale-conosco.html): Central de suporte oficial, atendimento via WhatsApp institucional e canal de ouvidoria.
+- [Termos de Uso](https://synedicaoficial.com/termos.html): Termos de navegação e conformidade com diretrizes regulatórias e de propriedade intelectual.
+- [Política de Privacidade](https://synedicaoficial.com/privacidade.html): Proteção integral de dados cadastrais e conformidade com a LGPD (Lei 13.709/2018).
 
-## Informações do Projeto e Destino Comercial
+## Verificação de Autenticidade de Produtos
 
-- **Domínio Institucional / Pressell**: https://synedicaoficial.ltd/
-- **Destino Oficial de Compras**: https://synedicaoficial.com/
-- **Atendimento**: Segunda a Sexta, das 09h às 18h
-- **Segmento**: Biotecnologia, Pesquisa & Desenvolvimento, Bem-Estar e Alta Performance
+Os clientes podem inserir o código de 7 caracteres (ex: AB12345) presente no selo da embalagem para validar a procedência oficial, dados do lote e conformidade técnica no banco de dados centralizado da Synedica.

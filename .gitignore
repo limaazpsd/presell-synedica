@@ -3,3 +3,8 @@
 scratch/
 .DS_Store
 Thumbs.db
+
+# Dependências
+node_modules/
+dist/
+.vite/

@@ -1,12 +1,13 @@
-# robots.txt para Synedica Pressel (Domínio: https://synedicaoficial.ltd/)
-# Configurado para máxima indexação no Google Ads, Busca Orgânica e Mecanismos de IA (LLMs)
+# robots.txt para Synedica Oficial
+# Configurado para máxima indexação no Google Ads, Busca Orgânica (SEO) e Motores de IA (LLMs)
 
 User-agent: *
 Allow: /
 Disallow: /scratch/
-Disallow: /*.mp4$
+Disallow: /node_modules/
+Disallow: /.git/
 
-# Google Ads & Google Search Crawlers
+# Google Ads & Google Search Crawlers (Acesso irrestrito para Quality Score e Auditoria)
 User-agent: Googlebot
 Allow: /
 
@@ -57,5 +58,5 @@ Allow: /
 User-agent: FacebookBot
 Allow: /
 
-# Sitemap do Domínio Atual
-Sitemap: https://synedicaoficial.ltd/sitemap.xml
+# Sitemap
+Sitemap: https://synedicaoficial.com/sitemap.xml

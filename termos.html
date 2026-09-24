@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Termos de Uso | Synedica Oficial</title>
-    <meta name="description" content="Termos e condições de uso do site oficial Synedica. Diretrizes de navegação, direitos de propriedade intelectual e responsabilidades.">
+    <meta name="description" content="Termos e condições de uso do portal oficial Synedica. Diretrizes de navegação, direitos de propriedade intelectual e responsabilidades.">
+    <meta name="keywords" content="termos de uso synedica, conformidade synedica, politicas synedica oficial, seguranca biotecnologia">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://synedicaoficial.ltd/termos.html">
-    <link rel="icon" type="image/svg+xml" href="LOGO SYNEDICA.svg">
+    <link rel="canonical" href="https://synedicaoficial.com/termos.html">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
     <link rel="stylesheet" href="shared.css">
 
     <script type="application/ld+json">
@@ -17,15 +20,15 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://synedicaoficial.ltd/" },
-            { "@type": "ListItem", "position": 2, "name": "Termos de Uso", "item": "https://synedicaoficial.ltd/termos.html" }
+            { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://synedicaoficial.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Termos de Uso", "item": "https://synedicaoficial.com/termos.html" }
           ]
         },
         {
           "@type": "WebPage",
           "name": "Termos de Uso Synedica",
           "description": "Condições gerais de navegação, responsabilidades legais e diretrizes de uso.",
-          "url": "https://synedicaoficial.ltd/termos.html"
+          "url": "https://synedicaoficial.com/termos.html"
         }
       ]
     }
@@ -33,38 +36,66 @@
 </head>
 <body>
 
+    <!-- Aviso Superior - Verde Claro Oficial #1F994E -->
     <div class="top-announcement-bar">
-        <span>Desenvolvimento com alta tecnologia e eficácia comprovada</span>
-        <span class="separator">/</span>
-        <span>Compra direta pelo canal oficial</span>
-        <span class="separator">/</span>
+        <span>Produtos desenvolvidos com alta tecnologia, qualidade e eficácia comprovada.</span>
+        <span class="separator">•</span>
         <span>Entrega rápida com envio em até 24h</span>
+        <span class="separator">•</span>
+        <span>Rastreabilidade e autenticidade garantida</span>
     </div>
 
+    <!-- Cabeçalho Oficial - Menu Desktop Idêntico à Imagem 2 & Mobile Idêntico à Imagem 1 -->
     <header class="site-header">
-        <div class="header-container">
-            <a href="index.html" class="brand-logo">
-                <img src="LOGO SYNEDICA.svg" alt="Synedica Logo">
+        <div class="site-logo">
+            <a href="index.html">
+                <img src="logo-sndy.png" alt="Synedica Oficial">
             </a>
+        </div>
 
-            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Menu">☰</button>
+        <nav class="main-menu" id="mainMenu">
+            <ul id="menu-main-menu" class="nav-menu">
+                <li class="menu-item"><a href="index.html#historia">Produtos</a></li>
+                <li class="menu-item"><a href="por-que-nos.html">Por Que Nós</a></li>
+                <li class="menu-item"><a href="index.html#padrao-qualidade">Modo de Uso</a></li>
+                <li class="menu-item"><a href="fale-conosco.html">Fale Conosco</a></li>
+                <li class="menu-item"><a href="fale-conosco.html">Revendedor</a></li>
+                <li class="menu-item"><a href="index.html#padrao-qualidade">Laudo de COA</a></li>
+                <li class="menu-item"><a href="fale-conosco.html">Trabalhe Conosco</a></li>
+                <li class="menu-item"><a href="fale-conosco.html">FAQ</a></li>
+                <li class="menu-item"><a href="index.html#synedica-verify-section" class="verify-link">Verificar Código</a></li>
+            </ul>
+        </nav>
 
-            <nav>
-                <ul class="nav-menu" id="nav-menu">
-                    <li><a href="index.html" class="nav-link">Início</a></li>
-                    <li><a href="por-que-nos.html" class="nav-link">Por Que Nós</a></li>
-                    <li><a href="fale-conosco.html" class="nav-link">Fale Conosco</a></li>
-                    <li><a href="termos.html" class="nav-link active">Termos</a></li>
-                    <li><a href="privacidade.html" class="nav-link">Privacidade</a></li>
-                </ul>
-            </nav>
+        <!-- Botão Hamburger Mobile (Imagem 1) -->
+        <button id="sndy-hamburger" aria-label="Abrir menu">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="4" width="28" height="2.5" rx="1.25" fill="#1F994E" />
+                <rect y="12.75" width="28" height="2.5" rx="1.25" fill="#1F994E" />
+                <rect y="21.5" width="28" height="2.5" rx="1.25" fill="#1F994E" />
+            </svg>
+        </button>
 
-            <div class="header-actions">
-                <a href="https://synedicaoficial.com/" class="header-cta-btn">
-                    <span>Acessar Loja</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
+        <!-- Overlay do Menu Mobile -->
+        <div id="sndy-overlay"></div>
+
+        <!-- Menu Drawer Mobile -->
+        <div id="sndy-drawer">
+            <div class="sndy-drawer-header">
+                <img src="logo-sndy.png" alt="Synedica">
+                <button id="sndy-close" aria-label="Fechar menu">×</button>
             </div>
+            <ul style="list-style:none;padding:16px 0;margin:0">
+                <li><a href="index.html#historia" class="sndy-nav-link">Produtos</a></li>
+                <li><a href="por-que-nos.html" class="sndy-nav-link">Por Que Nós</a></li>
+                <li><a href="index.html#padrao-qualidade" class="sndy-nav-link">Modo de Uso</a></li>
+                <li><a href="fale-conosco.html" class="sndy-nav-link">Fale Conosco</a></li>
+                <li><a href="fale-conosco.html" class="sndy-nav-link">Revendedor</a></li>
+                <li><a href="index.html#padrao-qualidade" class="sndy-nav-link">Laudo de COA</a></li>
+                <li><a href="fale-conosco.html" class="sndy-nav-link">Trabalhe Conosco</a></li>
+                <li><a href="fale-conosco.html" class="sndy-nav-link">FAQ</a></li>
+                <li><a href="index.html#synedica-verify-section" class="sndy-nav-link verify-highlight">Verificar Código</a></li>
+            </ul>
         </div>
     </header>
 
@@ -80,19 +111,19 @@
         <section class="content-section">
             <div class="prose-block">
                 <h2>1. Aceitação dos Termos</h2>
-                <p>Ao acessar ou utilizar qualquer parte deste website, o usuário declara ter lido, compreendido e concordado integralmente com todos os termos e políticas aqui descritos.</p>
+                <p>Ao acessar e navegar pelo portal oficial da Synedica, você concorda expressamente em cumprir estes Termos de Uso e todas as leis e regulamentos aplicáveis. Caso não concorde com qualquer disposição aqui estipulada, recomendamos que encerre a navegação.</p>
 
-                <h2>2. Finalidade Informativa</h2>
-                <p>O conteúdo disponibilizado neste portal tem caráter puramente institucional, técnico e informativo voltado ao universo biotecnológico. Nenhuma informação aqui veiculada substitui a avaliação e orientação de profissionais habilitados.</p>
+                <h2>2. Propriedade Intelectual</h2>
+                <p>Todo o conteúdo disponibilizado neste portal — incluindo marcas registradas, logotipos, textos explicativos, códigos-fonte, laudos analíticos e identidade visual — é de propriedade exclusiva da Synedica ou de seus parceiros devidamente licenciados, sendo protegido pelas leis de propriedade intelectual.</p>
 
-                <h2>3. Propriedade Intelectual</h2>
-                <p>Todos os logotipos, marcas, textos, elementos gráficos, diagramações e códigos-fonte presentes neste domínio são protegidos pelas leis de propriedade intelectual e direitos autorais. A reprodução não autorizada é estritamente proibida.</p>
+                <h2>3. Finalidade Informativa e Sistema de Autenticidade</h2>
+                <p>O serviço digital de verificação de autenticidade destina-se a permitir a conferência da integridade e procedência de lotes produzidos sob os padrões Synedica. O usuário compromete-se a utilizar o validador estritamente para fins legítimos de checagem.</p>
 
-                <h2>4. Autenticidade e Lotes</h2>
-                <p>A Synedica garante a conformidade e integridade exclusivamente dos produtos adquiridos através de seus canais e distribuidores autorizados devidamente lacrados.</p>
+                <h2>4. Limitação de Responsabilidade</h2>
+                <p>A Synedica envida seus melhores esforços para garantir a precisão contínua das informações e do banco de dados de lotes. Contudo, não nos responsabilizamos por falhas temporárias de conexão geradas por provedores externos ou por consultas efetuadas em sites não autorizados que imitem nossa marca.</p>
 
-                <h2>5. Modificações dos Termos</h2>
-                <p>Reservamo-nos o direito de atualizar ou alterar estes termos periodicamente, visando manter total conformidade com a legislação aplicável e com as melhores práticas de mercado.</p>
+                <h2>5. Atualizações dos Termos</h2>
+                <p>Estes termos podem ser atualizados periodicamente para refletir aprimoramentos técnicos e adequações regulatórias. Recomendamos a consulta regular desta página.</p>
             </div>
         </section>
     </main>
@@ -101,14 +132,17 @@
         <div class="footer-container">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <img src="LOGO SYNEDICA.svg" alt="Synedica Logo">
-                    <p>Referência em síntese biotecnológica de alta pureza, inovação científica e compromisso absoluto com a qualidade.</p>
+                    <img src="logo-sndy.png" alt="Synedica Oficial">
+                    <p>Referência em síntese biotecnológica, controle de qualidade laboratorial e conformidade analítica.</p>
                 </div>
 
                 <div class="footer-col">
                     <h4>Institucional</h4>
                     <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="index.html#historia">Nossa História</a></li>
                         <li><a href="por-que-nos.html">Por Que Nós</a></li>
+                        <li><a href="index.html#padrao-qualidade">Controle & Laudos</a></li>
                         <li><a href="fale-conosco.html">Fale Conosco</a></li>
                     </ul>
                 </div>
@@ -116,30 +150,53 @@
                 <div class="footer-col">
                     <h4>Segurança e Legal</h4>
                     <ul class="footer-links">
+                        <li><a href="index.html#synedica-verify-section">Verificar Autenticidade</a></li>
                         <li><a href="termos.html">Termos de Uso</a></li>
                         <li><a href="privacidade.html">Política de Privacidade</a></li>
-                        <li><a href="https://synedicaoficial.com/">Canal Oficial Synedica</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-disclaimer">
-                <p><strong>Isenção de Responsabilidade:</strong> As informações contidas neste site destinam-se a fins estritamente informativos e de suporte biotecnológico. Os produtos desenvolvidos seguem rigorosos padrões de controle e pureza. Consulte sempre um profissional habilitado antes de iniciar qualquer protocolo ou rotina.</p>
+                <p><strong>Isenção de Responsabilidade:</strong> As informações contidas neste portal destinam-se a fins estritamente informativos e de verificação de autenticidade laboratorial.</p>
             </div>
 
             <div class="footer-bottom">
-                <p>© 2026 Synedica. Hospedado em synedicaoficial.ltd. Todos os direitos reservados.</p>
+                <p>© 2026 Synedica® Oficial. Todos os direitos reservados.</p>
                 <p>Tecnologia e Pureza Certificada</p>
             </div>
         </div>
     </footer>
 
     <script>
-        const toggle = document.getElementById('mobile-toggle');
-        const menu = document.getElementById('nav-menu');
-        if (toggle && menu) {
-            toggle.addEventListener('click', () => menu.classList.toggle('open'));
-        }
+        (function () {
+            var hamburger = document.getElementById('sndy-hamburger');
+            var drawer = document.getElementById('sndy-drawer');
+            var overlay = document.getElementById('sndy-overlay');
+            var closeBtn = document.getElementById('sndy-close');
+
+            if (!hamburger || !drawer) return;
+
+            function openMenu() {
+                drawer.classList.add('open');
+                if (overlay) overlay.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMenu() {
+                drawer.classList.remove('open');
+                if (overlay) overlay.classList.remove('show');
+                document.body.style.overflow = '';
+            }
+
+            hamburger.addEventListener('click', openMenu);
+            if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+            if (overlay) overlay.addEventListener('click', closeMenu);
+
+            drawer.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', closeMenu);
+            });
+        })();
     </script>
 </body>
 </html>
